@@ -103,7 +103,6 @@ span {
     
     margin-right: calc(1vw + 5px);
     margin-left: calc(1vw + 5px);
-    margin-bottom: calc(1vw + 5px);
     font-size: calc(1.5vw + 1px);
     font-family: 'Italianno', cursive;
 } 
@@ -178,7 +177,7 @@ span {
 
 .socialmedia__section4__absolute {
     position: absolute;
-    top: 60%;
+    top: calc(20vw + 5px);
     left: 0;
     right: 0;
     background-color: darkgray;
@@ -214,16 +213,40 @@ span {
     grid-row: 2/3;
     background-color: aliceblue;
     position: relative;
+    
 }
 
 .socialmedia__section5 > img {
     margin-top: calc(12vw + 5px);
     margin-bottom: calc(6vw + 5px);
     width: 100%;
-    height: auto;
-    
+    max-height: calc(50% + 2vw);
 }
+@media(max-width:800px){
+.socialmedia__section5 > img{
+    max-height: calc(40% + 2vw);
+    }
+}
+@media(max-width:600px){
+    .socialmedia__section5 > img{
+        display: none;
+        }
 
+    .socialmedia__section5__figcaption__blockquote {
+        color: aliceblue;
+        
+    }
+    .socialmedia__section5 {
+        background-image: url('IMG/love4.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    span{
+        color: aliceblue;
+    }
+}
 .socialmedia__section5__figcaption {
     
     border: 2px solid;
@@ -260,12 +283,13 @@ span {
 }
 
 .socialmedia__section5__figcaption__blockquote {
-    position: absolute;
-    bottom: calc(2vw + 5px);
-    left: calc(2vw + 5px);
-    right: calc(2vw + 5px);
-    font-size: calc(1.2vw + 1px);
+    margin-top: calc(0.5vw + 5px) ;
+    
+    margin-left: calc(1vw + 5px);
+    margin-right: calc(1vw + 5px); 
+    font-size: calc(1vw + 1px);
     text-align:end;
+    text-overflow: clip;
     font-family: 'Viaoda Libre', cursive;
 }
 
