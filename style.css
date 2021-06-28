@@ -480,7 +480,30 @@ hr {
 .socialmedia__section8{
     grid-column: 4/6;
     grid-row: 3/4 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+
 }
+
+.socialmedia__section8 img {
+    grid-row: 1/2;
+}
+
+.socialmedia__section8 section {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: calc(1.5vw + 1px);
+    font-family: 'Viaoda Libre', cursive;
+    color: aliceblue;
+}
+
+.socialmedia__section8
+
+
 
 .aside-flex{
     display: flex;
